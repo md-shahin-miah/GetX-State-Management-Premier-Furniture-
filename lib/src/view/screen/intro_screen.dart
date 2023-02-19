@@ -67,10 +67,10 @@ class IntroScreen extends StatelessWidget {
                   "Decor Office\nWith \nFurniture",
                   style: h1Style.copyWith(color: Colors.white),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 5),
                 Text(
                   "Create a sustainable work space with 100% natural furniture",
-                  style: h3Style.copyWith(color: Colors.green),
+                  style: h3Style.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 introButton(),

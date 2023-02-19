@@ -22,7 +22,7 @@ class OfficeFurnitureListScreen extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
-                  Text("Hello Sina", style: h2Style),
+                  Text("Hello Shahin", style: h2Style),
                   Text("Buy Your favorite desk", style: h3Style),
                 ],
               ),

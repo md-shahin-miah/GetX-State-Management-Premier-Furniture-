@@ -19,16 +19,19 @@ class EmptyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          type == EmptyWidgetType.cart
-              ? Expanded(child: Image.asset(AppAsset.emptyCart))
-              : Image.asset(AppAsset.emptyFavorite),
-          const SizedBox(height: 10),
-          Text(title, style: h2Style)
-        ],
+    return Container(
+      height: MediaQuery.of(context).size.height*0.7,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            type == EmptyWidgetType.cart
+                ? Expanded(child: Image.asset(AppAsset.emptyCart))
+                : Image.asset(AppAsset.emptyFavorite),
+            const SizedBox(height: 10),
+            Text(title, style: h2Style)
+          ],
+        ),
       ),
     );
   }
